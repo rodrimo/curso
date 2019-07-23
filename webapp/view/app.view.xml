@@ -5,7 +5,9 @@
   displayBlock="true">
    <App>
       <pages>
-         <Page title="{i18n>homePageTitle}">
+         <Page title="{i18n>homePageTitle}"
+                class="sapUiResponsiveMargin"
+				width="auto">
             <content>
                <Panel
                   headerText="{i18n>helloPanelTitle}">
@@ -13,13 +15,17 @@
 
    <Button
       text="{i18n>showHelloButtonText}"
-      press="onShowHello"/>
+      press="onShowHello"
+      class="sapUiSmallMarginEnd"/>
 
    <Input
       value="{/recipient/name}"
       description="Hello {/recipient/name}"
       valueLiveUpdate="true"
       width="60%"/>     
+<Text
+								text="Hello {/recipient/name}"
+								class="sapUiSmallMargin"/>      
 
                   </content>
                </Panel>
