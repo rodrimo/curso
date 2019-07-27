@@ -11,7 +11,10 @@
 						icon="sap-icon://hello-world"
 						press="onOpenDialog"/>
 				</headerContent>
-         </Page>
-      </pages>
-   </App>
+				<content>
+					<mvc:XMLView viewName="sap.ui.demo.walkthrough.view.HelloPanel"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>
